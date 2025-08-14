@@ -111,6 +111,8 @@ The right panel contains five tabs for different control functions:
 
 ### Tab 1: Main Controls
 
+![(image-1)](https://)
+
 #### Frequency Management
 - **Primary Input**: High-precision frequency entry (0.5-1750 MHz)
 - **Step Control**: Smart stepping button cycles through:
