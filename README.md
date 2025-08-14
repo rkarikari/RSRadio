@@ -3,6 +3,7 @@
 **Version:** 1.5  
 **Build:** 2025.11.08  
 **Portable Edition - No Installation Required**
+<img width="1632" height="1135" alt="start" src="https://github.com/user-attachments/assets/a410c9ae-33b4-45f6-b3db-07090fa5db8a" />
 
 ---
 
