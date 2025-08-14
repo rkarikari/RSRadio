@@ -27,7 +27,7 @@
 ### Portable Setup (No Installation Required)
 1. **Extract Files**: Unzip the RadioSport SDR package to any location (USB drive, Desktop, etc.)
 2. **Connect Hardware**: Plug your RTL-SDR dongle into a USB port
-3. **Run Application**: Double-click `RadioSportSDR.exe` - no installation needed!
+3. **Run Application**: Double-click the `Radio` shortcut , - no installation needed!
 4. **First Use**: The app will auto-detect your RTL-SDR device and apply optimal default settings
 
 ### 30-Second Radio Reception
