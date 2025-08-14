@@ -1,4 +1,4 @@
-# RadioSport SDR - Complete User Guide
+# RadioSport SDR 
 
 **Version:** 1.5  
 **Build:** 2025.11.08  
