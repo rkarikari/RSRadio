@@ -1,8 +1,9 @@
-# RadioSport SDR - Complete User Guide
+# RadioSport SDR 
 
 **Version:** 1.5  
 **Build:** 2025.11.08  
 **Portable Edition - No Installation Required**
+<img width="1632" height="1135" alt="start" src="https://github.com/user-attachments/assets/a410c9ae-33b4-45f6-b3db-07090fa5db8a" />
 
 ---
 
@@ -26,7 +27,7 @@
 ### Portable Setup (No Installation Required)
 1. **Extract Files**: Unzip the RadioSport SDR package to any location (USB drive, Desktop, etc.)
 2. **Connect Hardware**: Plug your RTL-SDR dongle into a USB port
-3. **Run Application**: Double-click `RadioSportSDR.exe` - no installation needed!
+3. **Run Application**: Double-click the `Radio` shortcut , - no installation needed!
 4. **First Use**: The app will auto-detect your RTL-SDR device and apply optimal default settings
 
 ### 30-Second Radio Reception
@@ -58,9 +59,10 @@
 ---
 
 ## Main Interface Overview
+<img width="1622" height="1121" alt="pic1" src="https://github.com/user-attachments/assets/9f2c8aed-25fc-418c-a237-459843285b6c" />
 
-![RadioSport SDR Main Interface](image-1)
-*Main interface showing RF spectrum display with FM radio signal at 87.9 MHz*
+
+*Main interface showing RF spectrum display with FM radio signal *
 
 ### Header Section
 - **Title Bar**: "RadioSport SDR" with version and callsign (9G5AR)
@@ -79,7 +81,7 @@
 The spectrum display can show two different views:
 
 #### RF Spectrum (Raw SDR)
-![RF Spectrum Display](image-1)
+
 *RF spectrum showing raw SDR data with orange trace*
 
 - **Orange Trace**: Raw RF spectrum from the SDR hardware
@@ -88,7 +90,9 @@ The spectrum display can show two different views:
 - **Dynamic Range**: -122 dB to +10 dB scale
 
 #### Audio Spectrum (Processed)
-![Audio Spectrum Display](image-3)
+
+<img width="1620" height="1130" alt="pic5" src="https://github.com/user-attachments/assets/d66886f8-cc06-4f78-a3c6-e236c86192d8" />
+
 *Audio spectrum showing processed demodulated signal with green trace*
 
 - **Green Trace**: Processed audio spectrum after demodulation
@@ -111,7 +115,8 @@ The right panel contains five tabs for different control functions:
 
 ### Tab 1: Main Controls
 
-![(image-1)](https://)
+
+<img width="574" height="901" alt="main" src="https://github.com/user-attachments/assets/12262c39-4d8f-4776-bb4e-6687a986eadf" />
 
 #### Frequency Management
 - **Primary Input**: High-precision frequency entry (0.5-1750 MHz)
@@ -137,7 +142,8 @@ The right panel contains five tabs for different control functions:
 
 ### Tab 2: Gain Control
 
-![Gain Control Tab](image-4)
+<img width="572" height="887" alt="pic2" src="https://github.com/user-attachments/assets/634b9be7-11ab-4196-861b-d229ad3b194b" />
+
 *Gain control tab showing RF gain slider, AGC settings, and squelch control*
 
 #### RF Gain Management
@@ -176,6 +182,9 @@ Four sophisticated AGC modes for optimal signal handling:
 - **Enable/Disable**: Checkbox control for squelch activation
 
 ### Tab 3: Mode Selection
+
+<img width="581" height="897" alt="pic3" src="https://github.com/user-attachments/assets/1cd4ea23-572b-4eb7-b4ea-c6c0620717b8" />
+
 
 #### Protocol Selection
 Comprehensive demodulation support:
@@ -220,7 +229,8 @@ Context-aware frequency recommendations based on selected protocol:
 
 ### Tab 4: Noise Reduction (NR)
 
-![Noise Reduction Tab](image-2)
+![Noise<img width="574" height="903" alt="pic4" src="https://github.com/user-attachments/assets/6f200eee-4dea-4b5b-a7c9-242470e417e8" />
+
 *Noise Reduction control panel showing spectral subtraction algorithm settings*
 
 #### Advanced Noise Reduction System
@@ -263,6 +273,9 @@ Three sophisticated algorithms for different noise environments:
 
 ### Tab 5: Filter Control
 
+
+<img width="579" height="906" alt="audio" src="https://github.com/user-attachments/assets/98f99be9-3b4f-45be-8408-8880055695b7" />
+
 #### High-Precision Bandpass Filter
 - **Protocol-Adaptive**: Automatically adjusts for selected demodulation mode
 - **Specifications by Mode**:
@@ -284,25 +297,6 @@ Three sophisticated algorithms for different noise environments:
 
 The application provides two complementary views of signal activity:
 
-#### RF Spectrum Analysis
-![RF Spectrum Example](image-1)
-*Strong FM broadcast signals visible across the 87.8-88.0 MHz range*
-
-This view shows:
-- Raw RF energy from the RTL-SDR hardware
-- Multiple broadcast stations visible as peaks
-- Noise floor around -100 dBFS
-- Strong signals reaching -11 dBFS peak
-
-#### Audio Spectrum Analysis  
-![Audio Spectrum Example](image-3)
-*Processed audio spectrum showing demodulated FM signal content*
-
-This view shows:
-- Demodulated audio content after FM processing
-- Much cleaner representation of actual audio
-- Audio frequency range (0-15 kHz for FM stereo)
-- Lower noise floor due to processing
 
 ### Protocol-Specific Operation
 
@@ -360,11 +354,6 @@ RadioSport SDR automatically remembers your settings between sessions:
 - **SSB Parameters**: Carrier frequency for USB/LSB modes
 - **Display Mode**: Spectrum display preference (RF vs Audio)
 
-#### Storage Location
-**Portable Mode**: Settings saved in `settings/` folder within application directory
-- Travels with the application on USB drives
-- No registry or system folder dependencies
-- Easy backup by copying settings folder
 
 ### Session Recovery
 - **Automatic Loading**: Previous session restored on startup
@@ -372,52 +361,6 @@ RadioSport SDR automatically remembers your settings between sessions:
 - **Fresh Start Option**: Delete settings folder for factory reset
 
 ---
-
-## Performance Optimization
-
-### Signal Quality Assessment
-
-Using the provided screenshots as examples:
-
-#### Strong Signal Conditions (Image 1 & 4)
-- **Signal Strength**: -11.0 to -18.9 dBFS peak
-- **Recommended Settings**: 
-  - RF Gain: 30-35 dB (as shown: 33 dB)
-  - AGC Mode: Full AGC (Both) for automatic optimization
-  - Decimation: 1× for maximum quality
-
-#### Weak Signal Conditions
-- **Signal Strength**: Below -40 dBFS
-- **Recommended Settings**:
-  - RF Gain: 45 dB (High preset)
-  - AGC Mode: SDR AGC Only for hardware optimization
-  - Noise Reduction: Enable with Spectral Subtraction
-
-### CPU Usage Optimization
-- **Decimation Factor**: Higher factors reduce CPU load
-- **Spectrum Update Rate**: Reduce for slower systems  
-- **Noise Reduction**: Disable on resource-constrained systems
-- **Buffer Depth**: Adjust for latency vs stability balance
-
-### Recommended Settings by System
-
-#### High-Performance System (8+ GB RAM, Quad-core)
-- Decimation: 1× (250 kHz)
-- Noise Reduction: Any algorithm at full settings
-- Spectrum Update: Full rate (30 FPS)
-- AGC Mode: Full AGC (Both)
-
-#### Standard System (4-8 GB RAM, Dual-core)
-- Decimation: 4× (1000 kHz → 250 kHz)
-- Noise Reduction: Spectral Subtraction, moderate settings
-- Spectrum Update: Reduced rate
-- AGC Mode: Audio AGC Only
-
-#### Resource-Limited System (<4 GB RAM)
-- Decimation: 8× (2000 kHz → 250 kHz)
-- Noise Reduction: Disabled
-- Spectrum Update: Minimal
-- AGC Mode: SDR AGC Only
 
 ---
 
@@ -429,7 +372,7 @@ Using the provided screenshots as examples:
 **Symptoms**: Application can't detect RTL-SDR dongle
 **Solutions**:
 1. Check USB connection - try different USB port
-2. Install RTL-SDR drivers (included in rtlsdr_drivers folder)
+2. Install RTL-SDR drivers 
 3. Ensure dongle not in use by other software
 4. Try USB 2.0 port if USB 3.0 causes issues
 5. Run Windows Device Manager to check for hardware conflicts
@@ -444,7 +387,7 @@ Using the provided screenshots as examples:
 5. Check Windows audio mixer settings
 
 #### Poor Signal Quality
-**Symptoms**: Low signal readings (below -60 dBFS)
+**Symptoms**: Low signal readings 
 **Solutions**:
 1. Adjust RF gain - try 45 dB for weak signals
 2. Verify antenna connection and placement
@@ -460,26 +403,12 @@ Using the provided screenshots as examples:
 3. Restart application if interface becomes unresponsive
 4. Verify all controls are within valid ranges
 
-### Interpreting the Spectrum Display
-
-#### Normal Operation Indicators:
-- **Strong Signals**: Peaks above -40 dBFS (as shown in screenshots)
-- **Good SNR**: Signal 20+ dB above noise floor
-- **Clean Spectrum**: Minimal spurious signals or interference
-- **Stable Readings**: Consistent signal strength measurements
-
-#### Problem Indicators:
-- **Weak Signals**: Peaks below -60 dBFS  
-- **High Noise Floor**: Base level above -80 dBFS
-- **Spurious Signals**: Unexpected peaks across spectrum
-- **Unstable AGC**: Rapidly changing RMS values
-
 ---
 
 ## Technical Specifications
 
 ### RF Processing
-- **Frequency Range**: 24-1766 MHz (RTL-SDR dependent)
+- **Frequency Range**: 0.5-1766 MHz (RTL-SDR dependent)
 - **Sample Rates**: 250 kHz - 2 MHz baseband (decimation-dependent)
 - **Dynamic Range**: >70 dB with proper gain settings
 - **Sensitivity**: -120 dBm typical (10 Hz bandwidth)
@@ -511,60 +440,24 @@ Using the provided screenshots as examples:
 - **CPU Usage**: 15-50% (modern quad-core system)
 - **Memory Usage**: 50-200 MB typical
 - **Storage**: 50 MB application, 1 MB settings
-- **USB Bandwidth**: 2-20 Mbps (decimation dependent)
+- **USB Bandwidth**:  (decimation dependent)
 - **Real-time Performance**: Designed for continuous operation
-
----
-
-## Getting Help and Support
-
-### Visual Interface Guide
-The screenshots in this guide show:
-1. **Main Interface**: Complete overview of primary controls and spectrum display
-2. **Noise Reduction**: Advanced DSP controls for signal cleanup
-3. **Spectrum Views**: Both RF and Audio domain analysis
-4. **Gain Control**: AGC and manual gain management
-
-### Documentation Resources
-- **This User Guide**: Comprehensive operation manual with visual examples
-- **Keyboard Shortcuts**: Quick reference card
-- **Frequency Allocations**: Band plan references
-- **Protocol Specifications**: Technical demodulation details
-
-### Community Resources
-- **User Forums**: RadioSport community discussions
-- **Video Tutorials**: Step-by-step operation guides  
-- **Sample Projects**: Example configurations and setups
-- **User Contributions**: Shared presets and configurations
 
 ---
 
 ## Copyright and Legal
 
 **RadioSport SDR**  
-**Copyright © 2025 RadioSport Technologies (RNK). All rights reserved.**
+**Copyright © 2025 (RNK). All rights reserved.**
 
 ### License Terms
 - **Personal Use**: Free for amateur radio and personal use
 - **Educational Use**: Permitted in educational environments
-- **Commercial Use**: Contact RadioSport for licensing
-- **Distribution**: May not be redistributed without permission
+- **Commercial Use**: Contact RNK for licensing
+
 
 ### Third-Party Acknowledgments
 - **Qt Framework**: Cross-platform application framework
 - **RTL-SDR**: Open source RTL2832U driver project
 - **PortAudio**: Cross-platform audio I/O library
 - **FFTW**: Fast Fourier Transform library
-
-### Compliance
-- **FCC Part 97**: Amateur radio service compliance
-- **CE Marking**: European conformity standards
-- **Industry Canada**: ISED equipment certification
-
----
-
-**End of User Guide**
-
-*For the latest version of this guide and software updates, visit: [RadioSport Technologies](https://radiosport.tech)*
-
-*RadioSport SDR - Professional Software Defined Radio for Amateur Radio Enthusiasts*
