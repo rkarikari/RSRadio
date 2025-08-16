@@ -1,6 +1,6 @@
 # RadioSport SDR 
 
-**Version:** 1.5  
+**Version:** 1.6  
 **Build:** 2025.11.08  
 **Portable Edition - No Installation Required**
 <img width="1632" height="1135" alt="start" src="https://github.com/user-attachments/assets/a410c9ae-33b4-45f6-b3db-07090fa5db8a" />
@@ -142,7 +142,7 @@ The right panel contains five tabs for different control functions:
 
 ### Tab 2: Gain Control
 
-<img width="572" height="887" alt="pic2" src="https://github.com/user-attachments/assets/634b9be7-11ab-4196-861b-d229ad3b194b" />
+<img width="572" height="885" alt="Tab 2" src="https://github.com/user-attachments/assets/bb75cd41-47ee-482b-b45a-d94d77cc8180" />
 
 *Gain control tab showing RF gain slider, AGC settings, and squelch control*
 
@@ -150,6 +150,12 @@ The right panel contains five tabs for different control functions:
 - **Manual Control**: 0-50 dB RF gain slider (shown at 33 dB)
 - **Quick Presets**: Low (15dB), Medium (30dB), High (45dB)
 - **Real-Time Display**: Current gain value with dB indication
+
+#### Frequency Correction (PPM) ####
+- Corrects the crystal oscilator frequency errors.
+- Choose an signal of known (accurate) frequency and Adjust to match.
+- Use the slider or presets.
+
 
 #### Advanced AGC System
 Four sophisticated AGC modes for optimal signal handling:
