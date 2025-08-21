@@ -1,9 +1,10 @@
 # RadioSport SDR 
 
-**Version:** 1.6  
-**Build:** 2025.11.08  
-**Portable Edition - No Installation Required**
-<img width="1632" height="1135" alt="start" src="https://github.com/user-attachments/assets/a410c9ae-33b4-45f6-b3db-07090fa5db8a" />
+**Version:** 1.7  
+**Build:** 2025.21.08  
+**Portable - No Installation Required**
+
+<img width="1615" height="1128" alt="RDX_fix" src="https://github.com/user-attachments/assets/71d1440b-b306-496e-955b-ec0d8e3df296" />
 
 ---
 
