@@ -4,7 +4,8 @@
 **Build:** 2025.21.08  
 **Portable - No Installation Required**
 
-<img width="1615" height="1128" alt="RDX_fix" src="https://github.com/user-attachments/assets/71d1440b-b306-496e-955b-ec0d8e3df296" />
+<img width="1800" height="1188" alt="RDX_fix" src="https://github.com/user-attachments/assets/3e8653c7-8562-4c27-b3bf-22bd952af718" />
+
 
 ---
 
