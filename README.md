@@ -143,7 +143,11 @@ The right panel contains five tabs for different control functions:
 <img width="582" height="985" alt="main" src="https://github.com/user-attachments/assets/0c383e06-437d-4a34-a45c-68858c440d4a" />
 
 
-
+#### Preset Buttons
+- **Short Press**: Load stored frequesncy / Session
+- **Long Press**:  Store current frequency / Session
+- **Frequency Suggestion buttons**: Similar functionality. 
+  
 
 #### Sample Rate Control
 - **Decimation Factor**: Optimizes CPU usage vs bandwidth
@@ -156,6 +160,8 @@ The right panel contains five tabs for different control functions:
 - **Range**: 0-100% with soft limiting at 95%
 - **Real-Time**: Instant adjustment with no audio dropouts
 - **Protection**: Automatic clipping prevention
+
+
 
 ### Tab 2: Gain Control
 
