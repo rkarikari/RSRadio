@@ -1,10 +1,11 @@
 # RadioSport SDR 
 
-**Version:** 1.8  
-**Build:** 2025.26.08  
+**Version:** 1.9  
+**Build:** August 29, 2025  
 **Portable - No Installation Required**
 
-<img width="1800" height="1188" alt="RDX_fix" src="https://github.com/user-attachments/assets/3e8653c7-8562-4c27-b3bf-22bd952af718" />
+
+<img width="1804" height="1191" alt="RDX_fix" src="https://github.com/user-attachments/assets/3a68d9bf-5137-40a1-8e5f-f6c756a22f25" />
 
 
 ---
@@ -52,8 +53,8 @@
 
 
 
-### Running from USB Drive
-- **Plug & Play**: Copy entire folder to USB drive
+### Running from USB/Pen Drive
+- **Plug & Play**: Copy to USB drive
 - **No Admin Rights**: Runs without administrator privileges
 - **Portable Settings**: All configurations saved in local settings folder
 - **Cross-Computer**: Move USB drive between computers seamlessly
@@ -61,16 +62,36 @@
 ---
 
 ## Main Interface Overview
-<img width="1622" height="1121" alt="pic1" src="https://github.com/user-attachments/assets/9f2c8aed-25fc-418c-a237-459843285b6c" />
+
+
+<img width="1813" height="1198" alt="span_2 0Mhx" src="https://github.com/user-attachments/assets/98f6e32c-c54d-4865-bcf9-0ded9f6812f4" />
 
 
 *Main interface showing RF spectrum display with FM radio signal *
 
 ### Header Section
+
+
+
 - **Title Bar**: "RadioSport SDR" with version and callsign (9G5AR)
 - **Status Indicator**: Real-time connection status (STOPPED/RECEIVING)
 - **Signal Meter**: Live signal strength in dBFS with peak indicators
 - **Build Information**: Version and build date display
+- **Frequency Control**: Change frequency
+- **RDS**: WFM Station Information 
+
+<img width="1811" height="152" alt="h1" src="https://github.com/user-attachments/assets/7628100c-6dea-4978-bded-e9678ac75cd7" />
+
+
+#### Frequency Management
+- **Primary Input**: High-precision frequency entry (0.5-1750 MHz)
+- **Step Control**: Smart stepping button cycles through:
+  - 100 kHz (Normal) - Coarse tuning
+  - 10 kHz (Medium) - Standard fine tuning  
+  - 1 kHz (Fine) - Precise adjustments
+  - 0.1 kHz (Extra Fine) - Ultra-precise tuning
+- **Keyboard Navigation**: Arrow keys and mouse wheel with active step size
+- **FM Presets**: Quick access to common FM frequencies (87.9, 90.1, 95.7, 101.1, 105.7, 107.9 MHz)
 
 ### Main Layout
 - **Left Panel**: Large spectrum display with RF/Audio visualization
@@ -93,7 +114,8 @@ The spectrum display can show two different views:
 
 #### Audio Spectrum (Processed)
 
-<img width="1620" height="1130" alt="pic5" src="https://github.com/user-attachments/assets/d66886f8-cc06-4f78-a3c6-e236c86192d8" />
+<img width="1807" height="1198" alt="audio" src="https://github.com/user-attachments/assets/d63a380b-1677-4349-aee9-acd073dc303f" />
+
 
 *Audio spectrum showing processed demodulated signal with green trace*
 
@@ -118,17 +140,10 @@ The right panel contains five tabs for different control functions:
 ### Tab 1: Main Controls
 
 
-<img width="574" height="901" alt="main" src="https://github.com/user-attachments/assets/12262c39-4d8f-4776-bb4e-6687a986eadf" />
+<img width="582" height="985" alt="main" src="https://github.com/user-attachments/assets/0c383e06-437d-4a34-a45c-68858c440d4a" />
 
-#### Frequency Management
-- **Primary Input**: High-precision frequency entry (0.5-1750 MHz)
-- **Step Control**: Smart stepping button cycles through:
-  - 100 kHz (Normal) - Coarse tuning
-  - 10 kHz (Medium) - Standard fine tuning  
-  - 1 kHz (Fine) - Precise adjustments
-  - 0.1 kHz (Extra Fine) - Ultra-precise tuning
-- **Keyboard Navigation**: Arrow keys and mouse wheel with active step size
-- **FM Presets**: Quick access to common FM frequencies (87.9, 90.1, 95.7, 101.1, 105.7, 107.9 MHz)
+
+
 
 #### Sample Rate Control
 - **Decimation Factor**: Optimizes CPU usage vs bandwidth
@@ -144,7 +159,8 @@ The right panel contains five tabs for different control functions:
 
 ### Tab 2: Gain Control
 
-<img width="572" height="885" alt="Tab 2" src="https://github.com/user-attachments/assets/bb75cd41-47ee-482b-b45a-d94d77cc8180" />
+<img width="574" height="990" alt="gain" src="https://github.com/user-attachments/assets/d40877c6-86e4-483c-be3a-a90d459cc38b" />
+
 
 *Gain control tab showing RF gain slider, AGC settings, and squelch control*
 
@@ -191,7 +207,8 @@ Four sophisticated AGC modes for optimal signal handling:
 
 ### Tab 3: Mode Selection
 
-<img width="581" height="897" alt="pic3" src="https://github.com/user-attachments/assets/1cd4ea23-572b-4eb7-b4ea-c6c0620717b8" />
+<img width="581" height="997" alt="mode" src="https://github.com/user-attachments/assets/c276047f-3cd0-44c0-a750-8656de86b692" />
+
 
 
 #### Protocol Selection
@@ -237,7 +254,8 @@ Context-aware frequency recommendations based on selected protocol:
 
 ### Tab 4: Noise Reduction (NR)
 
-![Noise<img width="574" height="903" alt="pic4" src="https://github.com/user-attachments/assets/6f200eee-4dea-4b5b-a7c9-242470e417e8" />
+<img width="579" height="985" alt="nr" src="https://github.com/user-attachments/assets/a0683416-b2d5-401d-8a73-8e793f3c96db" />
+
 
 *Noise Reduction control panel showing spectral subtraction algorithm settings*
 
@@ -281,8 +299,9 @@ Three sophisticated algorithms for different noise environments:
 
 ### Tab 5: Filter Control
 
+<img width="579" height="990" alt="aud_filter" src="https://github.com/user-attachments/assets/496ebc92-45c5-43b8-8150-c0cf76c5be95" />
 
-<img width="579" height="906" alt="audio" src="https://github.com/user-attachments/assets/98f99be9-3b4f-45be-8408-8880055695b7" />
+
 
 #### High-Precision Bandpass Filter
 - **Protocol-Adaptive**: Automatically adjusts for selected demodulation mode
@@ -338,6 +357,7 @@ The status bar shows critical system information:
 - **Audio Processing Thread**: Demodulation and filtering
 - **UI Thread**: Display updates and user interaction
 - **Background Processing**: Noise reduction and spectrum analysis
+- **RDS**: Information from Stations supporting RDS
 
 ### Advanced Audio Processing
 - **32-bit Floating Point**: Professional-grade audio precision
