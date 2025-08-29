@@ -249,6 +249,8 @@ Comprehensive demodulation support:
 - **Visual Feedback**: Selected mode highlighted in accent color
 - **Instant Switching**: One-click mode changes
 - **Smart Defaults**: Each mode applies optimal settings automatically
+- **Store Session Function**: Long Press to store the current Session
+
 
 #### Frequency Suggestions
 Context-aware frequency recommendations based on selected protocol:
