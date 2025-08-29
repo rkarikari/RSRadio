@@ -78,7 +78,8 @@
 - **Signal Meter**: Live signal strength in dBFS with peak indicators
 - **Build Information**: Version and build date display
 - **Frequency Control**: Change frequency
-- **RDS**: WFM Station Information 
+- **RDS**: WFM Station Information
+- **RDS Toggle**: Switch RDS On/Off
 
 <img width="1811" height="152" alt="h1" src="https://github.com/user-attachments/assets/7628100c-6dea-4978-bded-e9678ac75cd7" />
 
